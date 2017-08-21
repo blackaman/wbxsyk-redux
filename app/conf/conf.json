@@ -1,0 +1,6 @@
+{
+  "clientId": 2551552862,
+  "redirectUrl": "http://test.weibo.xsyk.cccwei.com/authcheck.html",
+  "oauthUrl": "https://api.weibo.com/oauth2/authorize",
+  "apiHost": "http://test.api.wbxsyk.cccwei.com/weibo"
+}

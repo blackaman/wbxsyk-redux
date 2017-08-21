@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>*{margin:0;padding:0;}body{background:#f4f4f4;font-family:Arial, sans-serif}.show{display:block !important;}.hide{display:none !important}.tap-bg{-webkit-tap-highlight-color:rgba(0,0,0,0);outline:none;</style>
+    <script>
+      (function(b, c) {
+         var d = b.documentElement, resizeEvt = 'orientationchange' in c ? 'orientationchange' : 'resize',
+          recalc = function() {
+            var a = d.clientWidth
+            if (!a) return;
+           d.style.fontSize = (20 * (a / 320)) + 'px';},
+          anime = c.requestAnimationFrame || c.webkitRequestAnimationFrame ||c.mozRequestAnimationFrame || c.oRequestAnimationFrame ||
+          function(e) {
+            return setTimeout(e, 16.67)
+          };
+          if (!b.addEventListener) return;
+          c.addEventListener(resizeEvt, recalc, false);
+          b.addEventListener('DOMContentLoaded', recalc, false)
+        })(document, window)
+    </script>
+  </head>
+  <body></body>
+</html>
